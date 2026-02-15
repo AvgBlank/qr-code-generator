@@ -6,3 +6,9 @@ requires-python = ">=3.12"
 dependencies = [
     "qrcodegen>=1.8.0",
 ]
+
+[tool.uv]
+package = true
+
+[project.scripts]
+qr = "main:main"
