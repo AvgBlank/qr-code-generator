@@ -53,7 +53,7 @@ def main():
 Examples:
   {sys.argv[0]} "https://google.com" -p
   {sys.argv[0]} "hello world" -o qr.svg
-  {sys.argv[0]} "data" -e low -b 2 -p
+  {sys.argv[0]} "data" -e low -b 4 -p
 """,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )

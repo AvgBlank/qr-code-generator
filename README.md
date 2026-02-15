@@ -74,7 +74,7 @@ uv run qr "https://example.com" -p
 ### CLI Commands & Help Menu
 
 ```text
-usage: main.py [-h] [-e {low,medium,quartile,high}] [-b BORDER] [-o OUTPUT] [-p] text
+usage: qr [-h] [-e {low,medium,quartile,high}] [-b BORDER] [-o OUTPUT] [-p] text
 
 Generate QR codes from text or URLs
 
@@ -92,9 +92,9 @@ options:
   -p, --print           Print ASCII QR code to terminal
 
 Examples:
-  main.py "https://google.com" -p
-  main.py "hello world" -o qr.svg
-  main.py "data" -e low -b 2 -p
+  qr "https://google.com" -p
+  qr "hello world" -o qr.svg
+  qr "data" -e low -b 4 -p
 ```
 
 ## Authors / Main Contributors
