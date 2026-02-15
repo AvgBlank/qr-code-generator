@@ -1,0 +1,8 @@
+[project]
+name = "qrcodegenerator"
+version = "0.1.0"
+description = "This is a QR Code Generator"
+requires-python = ">=3.12"
+dependencies = [
+    "qrcodegen>=1.8.0",
+]

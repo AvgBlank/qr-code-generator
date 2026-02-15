@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "qrcodegen"
+version = "1.8.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/86/f8/d961d4e7035f8f67ca623e3e53ca7c610951b01b76667dee43f55d2e32f5/qrcodegen-1.8.0.zip", hash = "sha256:82db61f5065b6ba6d7606115b9413abdafdf3fe9c2810047100d08eced186e9e", size = 18407, upload-time = "2022-04-17T04:23:50.022Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/10/2b/fb03f5a840469f627d71690a95e8a53e3ea53ef6d752c93f34a5a65ee061/qrcodegen-1.8.0-py3-none-any.whl", hash = "sha256:06bf87021bc351f1c6e722ac67db8a059c4fe27bbfbca39ed7a9a2364abdd7a6", size = 14443, upload-time = "2022-04-17T04:23:48.588Z" },
+]
+
+[[package]]
+name = "qrcodegenerator"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "qrcodegen" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "qrcodegen", specifier = ">=1.8.0" }]
